@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TodosDnDTest/static/css/main.7f23fa55.css",
-    "main.js": "/TodosDnDTest/static/js/main.c4b09773.js",
+    "main.js": "/TodosDnDTest/static/js/main.11254c4a.js",
     "static/js/919.fa82afcc.chunk.js": "/TodosDnDTest/static/js/919.fa82afcc.chunk.js",
     "index.html": "/TodosDnDTest/index.html",
     "main.7f23fa55.css.map": "/TodosDnDTest/static/css/main.7f23fa55.css.map",
-    "main.c4b09773.js.map": "/TodosDnDTest/static/js/main.c4b09773.js.map",
+    "main.11254c4a.js.map": "/TodosDnDTest/static/js/main.11254c4a.js.map",
     "919.fa82afcc.chunk.js.map": "/TodosDnDTest/static/js/919.fa82afcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f23fa55.css",
-    "static/js/main.c4b09773.js"
+    "static/js/main.11254c4a.js"
   ]
 }
