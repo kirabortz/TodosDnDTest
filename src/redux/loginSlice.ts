@@ -32,6 +32,8 @@ const loginTC = createAppAsyncThunk<{ value: boolean }, LoginParamsType>(`${slic
   const { dispatch, rejectWithValue } = thunkAPI;
   const res = await loginAPI.login(data);
   if (res.data.resultCode === 0) {
+    //@ts-expect-error
+    localStorage.setItem("sn-token", res.data.data.token);
     dispatch(todolistsThunks.fetchTodolistsTC());
     return { value: true };
   } else {
@@ -43,6 +45,7 @@ const logoutTC = createAppAsyncThunk<{ value: boolean }, undefined>(`${slice.nam
   const { dispatch, rejectWithValue } = thunkAPI;
   const res = await loginAPI.logout();
   if (res.data.resultCode === 0) {
+    localStorage.removeItem("sn-token");
     dispatch(loginActions.setIsLoggedInAC({ value: false }));
     return { value: true };
   } else {
